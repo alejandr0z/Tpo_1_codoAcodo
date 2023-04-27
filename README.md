@@ -1,2 +1,2 @@
-# Tpo_1_codoAcodo
-Mi primer Tpo para el curso codo a codo 
+# tpo_1_codoAcodo
+Primer proyecto de codo a codo hecho con html, css y boostrap
