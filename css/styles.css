@@ -1,0 +1,12 @@
+.img-card {
+    height: 75%;
+    object-fit: cover;
+}
+
+.card {
+    height: 60vh;
+}
+
+.card-img-overlay{
+    
+}
