@@ -26,7 +26,7 @@
   right: 0;
   transform: translateY(-25%);
   padding: 20px;
-  margin-right: 8%;
+  margin-right: 10%;
   font-size: 20px;
   
 }
@@ -46,13 +46,14 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .text-container {
     text-align: center;
     top: auto;
     bottom: 0;
     transform: none;
   }
+
 }
 
     
