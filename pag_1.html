@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Proyecto 1 Codo a Codo</title>
+</head>
+
+<body>
+
+  <header>
+    <!-- Barra de navegación -->
+    <nav class="navbar bg-colPropio navbar-expand-lg p-0">
+      <div class="container">
+        <a id="conf-tex3" class="navbar-brand" href="#">
+          <img src="imagenes/codoacodo.png" alt="Logo" width="90" height="55" class="d-inline-block align-text-center">
+          <span class="text-white">Conf Bs As</span>
+        </a>
+
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a id="conf-tex1" class="nav-link text-white " aria-current="page" href="#">La conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary " href="#">Los oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">El lugar y la fecha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Conviertete en orador</a>
+            </li>
+            <li class="nav-item">
+              <a id="conf-tex2 " class="nav-link text-success" id="col-nav" href="pag_1.html" target="_blank">Comprar tickets</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <!-- Cards -->
+    <div class="container d-flex justify-content-center mt-4">
+
+        <!-- Contenedor 1 -->
+        <div class="border border-primary p-4 text-center border-2 ">
+          <p class="fs-3 fw-medium mb-2">Estudiante</p>
+          <p class="fw-light mb-4 fs-4">Tienen un descuento</p>
+          <p class="fs-4 fw-medium mb-3">80%</p>
+          <p class="mb-2 text-secondary fs-5 fw-light"> * presentar documentación</p>
+        </div>
+        <!-- Contenedor  -->
+        <div class="border border-info-subtle p-4 mx-2 text-center border-2">
+          <p class="fs-3 fw-medium mb-2">Trainee</p>
+          <p class="fw-light mb-4 fs-4">Tienen un descuento</p>
+          <p class="fs-4 fw-medium mb-3">50%</p>
+          <p class="mb-2 text-secondary fs-5 fw-light"> * presentar documentación</p>
+        </div>
+        <!-- Contenedor 3 -->
+        <div class="border border-warning p-4 text-center border-2">
+          <p class="fs-3 fw-medium mb-2">Junior</p>
+          <p class="fw-light mb-4 fs-4">Tienen un descuento</p>
+          <p class="fs-4 fw-medium mb-3">15%</p>
+          <p class="mb-2 text-secondary fs-5 fw-light"> * presentar documentación</p>
+        </div>
+    </div>
+  
+  
+  
+    <!-- Formulario -->
+    <p class="text-center mt-3 mb-0">VENTA</p>
+    <h2 class="text-center mb-2">VALOR DE TICKET $200</h2> 
+
+    <section class="container justify-content-between mt-2 h-100 col-7" id="">
+
+      <form id="form_calculador" method="POST" class="row justify-content-md-center">
+    
+        <!-- Entrada de datos -->
+        <div class="row">
+          <div class="col p-1">
+            <input type="text" id="name" class="form-control" placeholder="Nombre">
+          </div>
+          <div class="col p-1 mb-2">
+            <input type="text" id="apell" class="form-control" placeholder="Apellido">
+          </div>
+
+          <input type="email" id="correo" class="form-control" placeholder="Correo">
+        </div>
+    
+        <div class="row">
+          <div class="col p-1">
+            <label class="mb-2" for="cantidad">Cantidad</label>
+            <input type="number" id="cantidad" class="form-control" placeholder="Cantidad">
+          </div>
+          <div class="col p-1">
+            <label class="mb-2" for="categoria">Categoría</label>
+            <select id="categoria" class="form-select">
+              <option value="estudiante">Estudiante</option>
+              <option value="trainee">Trainee</option>
+              <option value="junior">Junior</option>
+            </select>
+          </div>
+          <div class="form-control border border-info text-bg-light p-2 mb-2 mt-2" id="resultado" style="">Total a pagar: $</div>
+        </div>
+        
+    
+        <!-- Botones -->
+        <div class="row justify-content-between mb-4">
+          <div class="col p-1">
+            <button type="reset" id="borrar" class="btn btn-success w-100" style="background-color:rgb(107, 208, 7); border-color: rgb(84, 161, 7);">Borrar</button>
+          </div>
+          <div class="col p-1">
+            <button type="submit" id="resumen" class="btn btn-success w-100" style="background-color:rgb(107, 208, 7); border-color: rgb(84, 161, 7);">Resultado</button>
+          </div>
+        </div>
+      </form>
+    
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="container-fluid  ">
+      <div class="row p-3 bg-colPropio justify-content-center">
+        <div class="col-lg-1 mx-3">
+          <a  class="text-decoration-none text-white" href="#">Preguntas frecuentes</a>
+        </div>
+        <div class="col-lg-1 mx-3">
+          <a  class="text-decoration-none text-white" href="#">Contáctanos</a>
+        </div>
+        <div class="col-lg-1 mx-3">
+          <a  class="text-decoration-none text-white" href="#">Prensa</a>
+        </div>
+        <div class="col-lg-1 mx-3">
+          <a  class="text-decoration-none text-white" href="#">Conferencias</a>
+        </div>
+        <div class="col-lg-1 mx-3">
+          <a class="text-decoration-none text-white" href="#">Términos y condiciones</a>
+        </div>
+        <div class="col-lg-1 mx-3">
+          <a class="text-decoration-none text-white"  href="#">Privacidad</a>
+        </div>
+        <div class="col-lg-1 mx-3">
+          <a  class="text-decoration-none text-white" href="#">Estudiantes</a>
+        </div>
+      </div>
+    </footer>
+
+    
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+
+</html>

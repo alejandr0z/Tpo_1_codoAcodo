@@ -1,17 +1,17 @@
 
-/* Le da color a la barra nav, footer y el de la imagen central */
+/* Estilos para la barra de navegación y el pie de página */
 
-.bg-colPropio{
-  background-color: #333a40 ;
+.bg-colPropio {
+  background-color: #333a40;
 }
 
-
+/* Estilos para la imagen central */
 .image-container img {
   filter: brightness(0.7);
   width: 100%;
   height: 100%;
   object-fit: cover;
-}  
+}
 
 .image-container {
   position: relative;
@@ -28,33 +28,31 @@
   padding: 20px;
   margin-right: 10%;
   font-size: 20px;
-  
 }
 
-/* botones dentro de imagen*/
-.btn-success {
-  background-color: #29a744 !important ;
-
-  font-size: 18px !important;
-  height: 40px;
-  text-align: center;
-}
-.btn-outline-light{
-  font-size: 18px !important;
-  height: 40px;
-  text-align: center;
-}
-
-
+/* Estilos responsivos para pantallas más pequeñas */
 @media (max-width: 700px) {
   .text-container {
     text-align: center;
     top: auto;
     bottom: 0;
     transform: none;
+    margin: 0 auto;
+    width: 80%;
   }
-
+  
+  .image-container {
+    height: 300px;
+  }
 }
 
-    
-
+/* Estilos responsivos para pantallas más grandes */
+@media (min-width: 1200px) {
+  .text-container {
+    font-size: 24px;
+  }
+  
+  .image-container {
+    height: 800px;
+  }
+}
