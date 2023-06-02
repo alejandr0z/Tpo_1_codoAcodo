@@ -1,5 +1,5 @@
 function calcularTotal(cantidadTickets, categoriaDescuento) {
-    const estudiante = 0.8
+    const estudiante = 0.2
     const trainee = 0.5
     const junior = 0.85
     const precioTicket = 200
